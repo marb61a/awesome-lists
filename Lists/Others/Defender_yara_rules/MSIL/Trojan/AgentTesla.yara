@@ -108746,3 +108746,26 @@ rule Trojan_MSIL_AgentTesla_RBA_2147945360_0
         (all of ($x*))
 }
 
+rule Trojan_MSIL_AgentTesla_SKC_2147945687_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/AgentTesla.SKC!MTB"
+        threat_id = "2147945687"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "AgentTesla"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "3"
+        strings_accuracy = "High"
+    strings:
+        $x_1_1 = {11 06 11 07 11 05 11 07 18 5a 18 6f 0f 00 00 0a 1f 10 28 10 00 00 0a 9c 11 07 17 58 13 07 11 07 11 06 8e 69 32 da}  //weight: 1, accuracy: High
+        $x_1_2 = {28 11 00 00 0a 28 12 00 00 0a 8c 13 00 00 01 72 4d 00 00 70 28 13 00 00 0a 28 14 00 00 0a 13 08 16 13 09 2b 25}  //weight: 1, accuracy: High
+        $x_1_3 = "https://discord.horse/js/bw_bundle.js" ascii //weight: 1
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
