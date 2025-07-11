@@ -108212,6 +108212,29 @@ rule Trojan_MSIL_AgentTesla_GVD_2147941721_0
         (all of ($x*))
 }
 
+rule Trojan_MSIL_AgentTesla_GVD_2147941721_1
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/AgentTesla.GVD!MTB"
+        threat_id = "2147941721"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "AgentTesla"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "5"
+        strings_accuracy = "High"
+    strings:
+        $x_3_1 = "https://files.catbox.moe" wide //weight: 3
+        $x_1_2 = "yd049968248264394bef64db916808bfd" ascii //weight: 1
+        $x_1_3 = "RunAsDetailedConverter" ascii //weight: 1
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
 rule Trojan_MSIL_AgentTesla_RAN_2147941802_0
 {
     meta:
@@ -108365,6 +108388,27 @@ rule Trojan_MSIL_AgentTesla_GVC_2147942401_0
         strings_accuracy = "High"
     strings:
         $x_1_1 = {0a 19 8d 49 00 00 01 25 16 72 01 00 00 70 a2 25 17 72 13 00 00 70 a2 25 18 72 21 00 00 70 a2 0b}  //weight: 1, accuracy: High
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
+rule Trojan_MSIL_AgentTesla_GVC_2147942401_1
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/AgentTesla.GVC!MTB"
+        threat_id = "2147942401"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "AgentTesla"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "1"
+        strings_accuracy = "High"
+    strings:
+        $x_1_1 = {8a 6d c2 8c c9 48 5b fd a8 9f 1e 51 42 60 3c 28 b2 bc 98 4c e3 59 04 d2 9c 5c 97 b3 c1 f1 b4 7c 97 82 31 27 dc a8 40 34 4f 41 24 34 10 10 88 11 7b 37 39 be d6 7b 1d 29 12 01 93 a8}  //weight: 1, accuracy: High
     condition:
         (filesize < 20MB) and
         (all of ($x*))
