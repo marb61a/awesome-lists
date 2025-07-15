@@ -108941,3 +108941,26 @@ rule Trojan_MSIL_AgentTesla_EGNH_2147946280_0
         (all of ($x*))
 }
 
+rule Trojan_MSIL_AgentTesla_RBB_2147946330_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/AgentTesla.RBB!MTB"
+        threat_id = "2147946330"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "AgentTesla"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "3"
+        strings_accuracy = "High"
+    strings:
+        $x_1_1 = {57 1d a2 09 09 0b 00 00 00 fa 01 33 00 16 00 00 01 00 00 00 62 00 00 00 1a 00 00 00 ed 00 00 00 75 00 00 00 9c 00 00 00 a4 00 00 00 19 00 00 00 16 00 00 00 26 00 00 00 02 00 00 00 05 00 00 00 06 00 00 00 01 00 00 00 01 00 00 00 07 00 00 00 12 00 00 00 05 00 00 00 03}  //weight: 1, accuracy: High
+        $x_1_2 = "b57cc5e8-4066-4e23-9253-6251563b6df9" ascii //weight: 1
+        $x_1_3 = "PharmacyProject.Properties.Resources" ascii //weight: 1
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
