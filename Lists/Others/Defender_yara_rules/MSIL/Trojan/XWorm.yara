@@ -2038,6 +2038,27 @@ rule Trojan_MSIL_XWorm_SLJ_2147939388_0
         (all of ($x*))
 }
 
+rule Trojan_MSIL_XWorm_BAD_2147939774_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/XWorm.BAD!MTB"
+        threat_id = "2147939774"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "XWorm"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "2"
+        strings_accuracy = "Low"
+    strings:
+        $x_2_1 = {11 04 04 08 17 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? d6 13 04 08 17 d6 0c 08 11 06 31 e5}  //weight: 2, accuracy: Low
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
 rule Trojan_MSIL_XWorm_WQ_2147939947_0
 {
     meta:
@@ -2818,6 +2839,30 @@ rule Trojan_MSIL_XWorm_NITF_2147950977_0
     strings:
         $x_2_1 = {02 70 0b 06 28 ?? 00 00 0a 0c 28 ?? 00 00 0a 07 28 ?? 00 00 0a 6f ?? 00 00 0a 0d 08 09 28 ?? 00 00 06 13 04 11 04 28 ?? 00 00 06 13 05 28 ?? 00 00 0a 28 ?? 00 00 0a 13 0b 12 0b fe 16 11 00 00 01 6f ?? 00 00 0a 28 ?? 00 00 0a 13 06 11 06}  //weight: 2, accuracy: Low
         $x_1_2 = {04 2b 42 08 6f ?? 00 00 0a 13 05 08 11 05 6f ?? 00 00 0a 13 06 28 ?? 00 00 0a 11 06 6f ?? 00 00 0a 13 07 08 6f ?? 00 00 0a 13 08 08 11 08 6f ?? 00 00 0a 13 09 06 11 07 11 09 6f ?? 00 00 0a 11 04 17 58 13 04 11 04 09 32 b9}  //weight: 1, accuracy: Low
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
+rule Trojan_MSIL_XWorm_AEEB_2147951081_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/XWorm.AEEB!MTB"
+        threat_id = "2147951081"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "XWorm"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "9"
+        strings_accuracy = "Low"
+    strings:
+        $x_5_1 = {0a 0a 06 20 00 01 00 00 6f ?? 00 00 0a 06 03 6f ?? 00 00 0a 06 04 6f ?? 00 00 0a 06 17 6f ?? 00 00 0a 06 18 6f ?? 00 00 0a 06 6f ?? 00 00 0a 0b 07 02 16 02 8e 69 6f ?? 00 00 0a 0c de 14}  //weight: 5, accuracy: Low
+        $x_2_2 = {06 0a 06 03 7d ?? 00 00 04 02 06 fe ?? ?? 00 00 06 73 ?? 00 00 0a 28 ?? 00 00 2b 28 ?? 00 00 2b 2a}  //weight: 2, accuracy: Low
+        $x_1_3 = "FromBase64String" ascii //weight: 1
+        $x_1_4 = "CreateDecryptor" ascii //weight: 1
     condition:
         (filesize < 20MB) and
         (all of ($x*))
