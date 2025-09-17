@@ -2267,28 +2267,6 @@ rule Trojan_Win64_Zusy_AE_2147951446_0
         (all of ($x*))
 }
 
-rule Trojan_Win64_Zusy_KAE_2147951761_0
-{
-    meta:
-        author = "defender2yara"
-        detection_name = "Trojan:Win64/Zusy.KAE!MTB"
-        threat_id = "2147951761"
-        type = "Trojan"
-        platform = "Win64: Windows 64-bit platform"
-        family = "Zusy"
-        severity = "Critical"
-        info = "MTB: Microsoft Threat Behavior"
-        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
-        threshold = "30"
-        strings_accuracy = "High"
-    strings:
-        $x_10_1 = {06 09 02 09 91 03 09 91 61 d2 9c 09 17 58 0d 09 02 8e 69 fe 04 13 04 11 04 2d e5}  //weight: 10, accuracy: High
-        $x_20_2 = "kan\\Desktop\\den444\\den444\\obj\\Debug\\den444.pdb" ascii //weight: 20
-    condition:
-        (filesize < 20MB) and
-        (all of ($x*))
-}
-
 rule Trojan_Win64_Zusy_PGZC_2147951847_0
 {
     meta:
@@ -2355,6 +2333,30 @@ rule Trojan_Win64_Zusy_SXJ_2147952288_0
     strings:
         $x_3_1 = {88 45 7c 48 8d 45 70 f3 0f 7f 85 80 00 00 00 48 89 45 10 f2 0f 10 05 ?? ?? ?? ?? 66 44 89 65 7e f2 0f 11 45 70 44 88 65 7d}  //weight: 3, accuracy: Low
         $x_2_2 = {48 8b 4d 28 48 83 f9 ?? 4c 89 64 24 ?? 4c 8d 45 10 4c 0f 47 45 ?? 48 8d 95 ?? ?? ?? ?? 48 83 bd c8 ?? ?? ?? ?? 48 0f 47 95}  //weight: 2, accuracy: Low
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
+rule Trojan_Win64_Zusy_SXK_2147952415_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:Win64/Zusy.SXK!MTB"
+        threat_id = "2147952415"
+        type = "Trojan"
+        platform = "Win64: Windows 64-bit platform"
+        family = "Zusy"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "12"
+        strings_accuracy = "Low"
+    strings:
+        $x_6_1 = {4c 8d 45 f0 48 83 f9 ?? 4c 0f 47 45 f0 48 83 7f 18 ?? 76 03 48 8b 3f 4c 89 64 24 ?? 45 33 c9 48 8b d7 33 c9 e8}  //weight: 6, accuracy: Low
+        $x_4_2 = {4c 89 bc 24 10 15 00 00 4c 8d 65 80 4c 0f 47 65 80 4d 8d 7d 4c 0f 57 c0 0f 57 c9 0f 11 44 24 60}  //weight: 4, accuracy: High
+        $x_1_3 = "nbgtpasrg.exe" ascii //weight: 1
+        $x_1_4 = "crypted_build.exe" ascii //weight: 1
     condition:
         (filesize < 20MB) and
         (all of ($x*))
