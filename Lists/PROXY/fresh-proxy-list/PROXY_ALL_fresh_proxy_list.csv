@@ -1,4 +1,9 @@
 dest_ip,dest_port,metadata_comment
+34.140.137.151,80,proxylist.txt
+102.177.176.208,80,proxylist.txt
+102.177.176.188,80,proxylist.txt
+216.205.52.27,80,proxylist.txt
+185.238.228.226,80,proxylist.txt
 103.84.177.28,8083,proxylist.txt
 108.162.192.76,80,proxylist.txt
 141.101.114.87,80,proxylist.txt
