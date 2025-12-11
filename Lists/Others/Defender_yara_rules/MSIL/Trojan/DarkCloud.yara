@@ -1361,3 +1361,46 @@ rule Trojan_MSIL_DarkCloud_AGLB_2147957707_0
         (all of ($x*))
 }
 
+rule Trojan_MSIL_DarkCloud_SM_2147959271_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/DarkCloud.SM!MTB"
+        threat_id = "2147959271"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "DarkCloud"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "2"
+        strings_accuracy = "High"
+    strings:
+        $x_2_1 = {11 08 11 12 11 14 11 12 11 14 d6 28 9d 01 00 0a 11 09 11 12 11 14 11 12 11 14 d8 28 9d 01 00 0a 11 14 17 d6 13 14 11 14 11 13 31 d4}  //weight: 2, accuracy: High
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
+rule Trojan_MSIL_DarkCloud_RV_2147959283_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:MSIL/DarkCloud.RV!MTB"
+        threat_id = "2147959283"
+        type = "Trojan"
+        platform = "MSIL: .NET intermediate language scripts"
+        family = "DarkCloud"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_PEHSTR_EXT"
+        threshold = "2"
+        strings_accuracy = "High"
+    strings:
+        $x_1_1 = {57 1d a2 09 09 0f 00 00 00 fa 25 33 00 16 00 00 01 00 00 00 56 00 00 00 0b 00 00 00 29 00 00 00 d9 00 00 00 2a 00 00 00 90 00 00 00 01 00 00 00 21 00 00 00 17 00 00 00 03 00 00 00 07 00 00 00 08 00 00 00 0c 00 00 00 01 00 00 00 06 00 00 00 05 00 00 00 02 00 00 00 02 00 00 00 02}  //weight: 1, accuracy: High
+        $x_1_2 = "PegSolitaire.Properties.Resources" ascii //weight: 1
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
+}
+
