@@ -7659,7 +7659,7 @@ rule Trojan_Win32_ClickFix_CCX_2147945258_0
         $x_1_4 = "ht'+'tp" wide //weight: 1
         $x_1_5 = "'h'+'tt'+'p" wide //weight: 1
         $x_1_6 = "htt'+'p" wide //weight: 1
-        $n_100_7 = "\\EdgeWebView\\Application\\142.0.3595.94\\msedgewebview2.exe" wide //weight: -100
+        $n_100_7 = "msedgewebview2.exe" wide //weight: -100
     condition:
         (filesize < 20MB) and
         (not (any of ($n*))) and
@@ -13276,5 +13276,27 @@ rule Trojan_Win32_ClickFix_SFAC_2147962609_0
             ((1 of ($x_10_*) and 1 of ($x_1_*))) or
             (all of ($x*))
         )
+}
+
+rule Trojan_Win32_ClickFix_IK_2147962708_0
+{
+    meta:
+        author = "defender2yara"
+        detection_name = "Trojan:Win32/ClickFix.IK!MTB"
+        threat_id = "2147962708"
+        type = "Trojan"
+        platform = "Win32: Windows 32-bit platform"
+        family = "ClickFix"
+        severity = "Critical"
+        info = "MTB: Microsoft Threat Behavior"
+        signature_type = "SIGNATURE_TYPE_CMDHSTR_EXT"
+        threshold = "6"
+        strings_accuracy = "Low"
+    strings:
+        $x_5_1 = {69 00 65 00 78 00 28 00 69 00 77 00 72 00 20 00 2d 00 75 00 72 00 69 00 20 00 [0-6] 2e 00 [0-6] 2e 00 [0-6] 2e 00 [0-6] 20 00 2d 00 75 00 73 00 65 00 62 00 61 00 73 00 69 00 63 00 70 00 61 00 72 00 73 00 69 00 6e 00 67 00 29 00}  //weight: 5, accuracy: Low
+        $x_1_2 = "press " wide //weight: 1
+    condition:
+        (filesize < 20MB) and
+        (all of ($x*))
 }
 
