@@ -1,5 +1,5 @@
 fuzzer,domain,dns_a,dns_aaaa,dns_mx,dns_ns
-*original,leboncoin.fr,18.173.121.34,,mx0.mail.ovh.net,ns-1125.awsdns-12.org
+*original,leboncoin.fr,52.85.12.18,,mx0.mail.ovh.net,ns-1125.awsdns-12.org
 addition,leboncoin0.fr,,,,
 addition,leboncoin1.fr,,,,
 addition,leboncoin2.fr,,,,
@@ -126,6 +126,11 @@ homoglyph,leb0rcoin.fr,,,,
 homoglyph,lebomc0in.fr,,,,
 homoglyph,lebomco1n.fr,,,,
 homoglyph,lebomcoim.fr,,,,
+homoglyph,lebonco1r.fr,,,,
+homoglyph,leboncoim.fr,,,,
+homoglyph,leboncolr.fr,,,,
+homoglyph,leborcoln.fr,,,,
+homoglyph,ledoncoin.fr,!ServFail,!ServFail,!ServFail,ns1.o2switch.net
 homoglyph,lebomcoin.fr,104.247.81.99,,mail.h-email.net,ns1.parkingcrew.net
 homoglyph,lebomcoir.fr,,,,
 homoglyph,lebomcoln.fr,,,,
@@ -137,13 +142,10 @@ homoglyph,lebonc0ir.fr,,,,
 homoglyph,lebonc0ln.fr,,,,
 homoglyph,lebonco1m.fr,,,,
 homoglyph,lebonco1n.fr,,,,
-homoglyph,lebonco1r.fr,,,,
-homoglyph,leboncoim.fr,,,,
 homoglyph,leboncoir.fr,,,,
 homoglyph,leboncoirn.fr,,,,
 homoglyph,leboncolm.fr,,,,
 homoglyph,leboncoln.fr,13.36.203.13,,,ns-1319.awsdns-36.org
-homoglyph,leboncolr.fr,,,,
 homoglyph,lebone0in.fr,,,,
 homoglyph,leboneo1n.fr,,,,
 homoglyph,leboneoim.fr,,,,
@@ -156,13 +158,11 @@ homoglyph,leborco1n.fr,,,,
 homoglyph,leborcoim.fr,,,,
 homoglyph,leborcoin.fr,,,,
 homoglyph,leborcoir.fr,,,,
-homoglyph,leborcoln.fr,,,,
 homoglyph,leboreoin.fr,,,,
 homoglyph,leborncoin.fr,,,,
 homoglyph,lecloncoin.fr,,,,
 homoglyph,led0ncoin.fr,,,,
 homoglyph,ledloncoin.fr,,,,
-homoglyph,ledoncoin.fr,!ServFail,!ServFail,!ServFail,ns1.o2switch.net
 homoglyph,ledomcoin.fr,185.98.131.135,2a00:7ee0:8:0:3:3813:0:cbc,mail.ledomcoin.fr,ns10.lwsdns.com
 homoglyph,ledonc0in.fr,,,,
 homoglyph,ledonco1n.fr,,,,
@@ -685,7 +685,7 @@ insertion,lebo0ncoin.fr,,,,
 insertion,lebo9ncoin.fr,,,,
 insertion,lebobncoin.fr,,,,
 insertion,lebohncoin.fr,,,,
-insertion,leboincoin.fr,192.155.84.236,2600:3c01::2000:3aff:feb3:2e94,,changchang.ns.giantpanda.com
+insertion,leboincoin.fr,45.33.83.100,2600:3c03::f03c:95ff:fe00:29ca,,changchang.ns.giantpanda.com
 insertion,lebojncoin.fr,,,,
 insertion,lebokncoin.fr,,,,
 insertion,lebolncoin.fr,,,,
