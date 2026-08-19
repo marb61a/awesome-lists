@@ -1974,97 +1974,215 @@ dest_ip,dest_port,metadata_type,metadata_country
 45.198.20.156,3125,http,Indonesia
 92.49.177.39,8080,http,Russian Federation
 145.220.226.2,8080,http,Netherlands
+202.166.219.80,4153,socks4,Nepal
+210.2.149.187,1080,socks4,Pakistan
+200.16.211.68,4153,socks4,Argentina
+185.157.111.3,5678,socks4,Estonia
+203.160.61.99,4145,socks4,Indonesia
+193.180.215.116,1080,socks4,Denmark
 192.252.208.70,14282,socks4,United States of America
-46.8.104.176,1080,socks4,Russian Federation
-43.153.84.220,9050,socks4,United States of America
-27.77.227.43,1080,socks4,Viet Nam
-181.57.178.146,1080,socks4,Colombia
-129.151.9.55,10808,socks4,United States of America
-188.132.249.66,1080,socks4,Türkiye
-144.31.203.194,9050,socks4,Netherlands
-172.86.75.243,7301,socks4,Netherlands
-103.231.105.158,4145,socks4,Hong Kong
+185.171.83.65,49153,socks4,Netherlands
+93.93.61.153,1080,socks4,Lithuania
+184.181.217.201,4145,socks4,United States of America
+65.20.105.241,10001,socks4,Spain
+195.225.116.14,4145,socks4,Switzerland
+152.53.116.71,8080,socks4,Germany
+43.242.227.10,9052,socks4,India
 192.252.209.158,4145,socks4,United States of America
-43.153.2.64,9050,socks4,United States of America
-91.109.114.211,8888,socks4,United Kingdom of Great Britain and Northern Ireland
-171.254.1.231,1080,socks4,Viet Nam
-36.95.39.122,1080,socks4,Indonesia
-38.14.250.162,1080,socks4,United States of America
-38.54.63.7,1080,socks4,South Africa
-43.153.71.188,9050,socks4,United States of America
-45.38.210.105,9050,socks4,Singapore
-155.212.209.31,7890,socks4,Russian Federation
-89.169.168.25,6101,socks4,Russian Federation
+83.56.15.57,5678,socks4,Spain
+36.88.242.103,1080,socks4,Indonesia
+31.168.143.90,1080,socks4,Israel
+91.107.254.246,9097,socks4,Germany
+184.178.172.25,15291,socks4,United States of America
+95.182.78.6,5678,socks4,Ukraine
+190.144.224.182,44550,socks4,Colombia
+199.102.104.70,4145,socks4,United States of America
+177.91.255.35,5678,socks4,Peru
+183.80.130.10,4145,socks4,Viet Nam
+104.200.152.30,4145,socks4,United States of America
+85.198.102.172,1080,socks4,Russian Federation
 80.92.227.185,5678,socks4,Ukraine
-95.182.78.10,5678,socks4,Ukraine
-87.228.228.101,4145,socks4,Cyprus
-136.233.136.41,43314,socks4,India
+98.188.47.150,4145,socks4,United States of America
+62.109.30.179,1080,socks4,Russian Federation
+24.249.199.12,4145,socks4,United States of America
+45.13.186.134,1080,socks4,Germany
+188.72.16.74,1080,socks4,Iraq
+185.252.147.44,1080,socks4,Russian Federation
+192.252.215.5,16137,socks4,United States of America
+142.54.236.97,4145,socks4,United States of America
+142.54.239.1,4145,socks4,United States of America
+117.4.26.246,1080,socks4,Viet Nam
+113.161.145.229,4153,socks4,Viet Nam
+116.232.80.133,1080,socks4,China
 87.107.68.231,1081,socks4,"Iran, Islamic Republic of"
-158.247.216.192,7777,socks4,"Korea, Republic of"
-72.195.34.41,4145,socks4,United States of America
-27.75.144.184,1080,socks4,Viet Nam
-144.31.207.141,1080,socks4,United States of America
-46.10.198.10,4153,socks4,Bulgaria
-212.132.99.35,9050,socks4,United Kingdom of Great Britain and Northern Ireland
-27.77.230.19,1080,socks4,Viet Nam
-116.106.107.228,1080,socks4,Viet Nam
-177.131.121.208,5432,socks4,Brazil
-5.129.236.27,1080,socks4,Netherlands
+68.71.247.130,4145,socks4,United States of America
+45.95.38.57,9050,socks4,Canada
+185.79.243.153,38431,socks4,Poland
+192.111.130.2,4145,socks4,United States of America
+160.250.54.5,9000,socks4,Viet Nam
+109.69.211.18,1080,socks4,Czechia
+105.30.248.241,1080,socks4,South Africa
+104.129.11.28,1081,socks4,United States of America
+144.172.91.38,1080,socks4,United States of America
+87.228.228.101,4145,socks4,Cyprus
+181.57.178.146,1080,socks4,Colombia
+51.222.12.245,10084,socks4,Canada
+39.175.80.225,1080,socks4,China
+183.90.187.248,9050,socks4,Hong Kong
+164.152.122.199,19100,socks4,United States of America
+207.180.205.36,1080,socks4,France
+5.42.122.141,10808,socks4,Russian Federation
+203.160.58.198,4145,socks4,Indonesia
+103.221.228.50,5678,socks4,Viet Nam
 206.220.175.2,4145,socks4,United States of America
-217.60.33.157,1080,socks4,Poland
-45.137.43.0,1081,socks4,Poland
-103.80.168.9,1080,socks4,India
-171.250.222.254,1080,socks4,Viet Nam
-144.124.227.88,3129,socks5,Netherlands
-67.207.92.87,1088,socks5,United States of America
-212.48.134.145,1080,socks5,Russian Federation
-47.82.70.164,1011,socks5,Hong Kong
-57.129.123.224,30629,socks5,Germany
-159.69.21.0,9050,socks5,Germany
-185.70.129.183,1080,socks5,Russian Federation
-45.133.210.241,1080,socks5,Netherlands
-199.102.105.242,4145,socks5,United States of America
-192.111.129.145,16894,socks5,United States of America
-188.131.155.235,1088,socks5,China
-92.39.69.134,11200,socks5,Russian Federation
-98.181.137.80,4145,socks5,United States of America
-118.69.134.153,20000,socks5,Viet Nam
-195.128.18.229,1080,socks5,Ukraine
-151.243.224.12,1080,socks5,Germany
-143.20.185.219,9150,socks5,United States of America
-194.87.191.118,20090,socks5,Netherlands
-113.176.118.150,1080,socks5,Viet Nam
-213.155.11.237,1080,socks5,Finland
-68.64.179.72,10809,socks5,Hong Kong
-118.70.151.55,1080,socks5,Viet Nam
-5.141.29.96,1080,socks5,Russian Federation
-80.211.131.230,9050,socks5,Italy
-192.144.57.124,9050,socks5,Russian Federation
-202.6.233.59,7878,socks5,Indonesia
-185.243.99.32,1080,socks5,United States of America
-72.56.24.101,1080,socks5,Netherlands
-158.220.101.43,1080,socks5,France
-77.110.126.90,1080,socks5,United States of America
-165.22.240.206,1080,socks5,Singapore
-182.184.119.180,1080,socks5,Pakistan
-89.150.35.253,1080,socks5,Netherlands
-45.40.136.39,45741,socks5,United States of America
-92.205.186.129,1080,socks5,France
-158.160.234.55,1080,socks5,Russian Federation
-89.208.106.37,32712,socks5,Netherlands
-89.40.233.13,1080,socks5,Kazakhstan
-192.252.208.67,14287,socks5,United States of America
-5.35.85.97,1080,socks5,Russian Federation
-68.1.210.163,4145,socks5,United States of America
-142.93.21.46,61616,socks5,United States of America
-45.90.57.25,1080,socks5,Switzerland
+80.191.40.130,5678,socks4,"Iran, Islamic Republic of"
+27.75.150.159,1080,socks4,Viet Nam
+212.132.99.35,9050,socks4,United Kingdom of Great Britain and Northern Ireland
+46.171.28.162,59311,socks4,Poland
+81.26.186.169,10808,socks4,Russian Federation
+130.61.141.136,9091,socks4,Germany
+65.21.194.253,9050,socks4,Finland
+132.226.229.220,1080,socks4,"Korea, Republic of"
+155.212.209.31,7890,socks4,Russian Federation
+185.179.189.248,1080,socks4,Russian Federation
+115.74.155.156,1080,socks4,Viet Nam
+213.173.75.222,5678,socks4,Austria
+178.83.75.60,9050,socks4,Netherlands
+27.68.172.117,1080,socks4,Viet Nam
+139.59.52.90,8888,socks4,India
+169.159.128.73,1080,socks4,South Africa
+193.108.115.81,10808,socks4,Russian Federation
+65.21.61.221,8080,socks4,Finland
+103.76.170.254,1080,socks4,Indonesia
+61.191.119.134,10800,socks4,China
+113.161.6.170,1080,socks4,Viet Nam
+129.151.9.55,10808,socks4,United States of America
+142.91.105.231,1234,socks4,Japan
+206.189.181.32,9050,socks4,United States of America
+103.88.204.70,1080,socks4,Indonesia
+177.131.118.123,5432,socks4,Brazil
+67.201.59.70,4145,socks4,United States of America
+171.250.218.158,1080,socks4,Viet Nam
+91.202.5.45,1080,socks4,Netherlands
+131.222.248.195,5678,socks4,Türkiye
+129.226.93.12,7788,socks4,Singapore
+194.135.38.119,2333,socks4,Netherlands
+177.253.136.162,5678,socks4,Colombia
+27.77.230.19,1080,socks4,Viet Nam
+51.83.101.177,1080,socks4,France
+196.202.80.48,1080,socks4,Egypt
+72.207.109.5,4145,socks5,United States of America
+43.135.135.65,1080,socks5,United States of America
+195.19.50.130,1080,socks5,Russian Federation
+199.229.254.129,4145,socks5,United States of America
+192.252.220.89,4145,socks5,United States of America
+185.128.104.152,8443,socks5,Germany
+184.178.172.26,4145,socks5,United States of America
+144.91.121.61,1088,socks5,France
 121.169.46.116,1090,socks5,"Korea, Republic of"
-80.78.248.178,3080,socks5,Russian Federation
-212.48.150.38,1080,socks5,Russian Federation
-198.252.108.20,9050,socks5,United States of America
-95.84.160.232,8443,socks5,Russian Federation
-118.70.67.11,1080,socks5,Viet Nam
+79.137.196.250,1080,socks5,Netherlands
+130.193.43.183,1080,socks5,Russian Federation
+72.37.216.68,4145,socks5,United States of America
+72.207.33.64,4145,socks5,United States of America
+68.1.210.189,4145,socks5,United States of America
+70.166.65.160,4145,socks5,United States of America
+43.110.40.117,8888,socks5,United States of America
+193.222.99.32,1080,socks5,Germany
+178.150.77.204,10801,socks5,Ukraine
+144.124.232.204,1080,socks5,Netherlands
+103.119.60.219,1080,socks5,Indonesia
+72.195.34.41,4145,socks5,United States of America
+72.223.188.92,4145,socks5,United States of America
+72.195.101.99,4145,socks5,United States of America
+68.1.210.163,4145,socks5,United States of America
+45.61.129.165,9050,socks5,United States of America
+31.76.80.215,1080,socks5,Finland
+185.209.29.226,1080,socks5,Russian Federation
+185.200.176.236,1080,socks5,Netherlands
+178.104.48.190,9110,socks5,Germany
+180.158.222.93,1080,socks5,China
+172.86.75.243,7301,socks5,Netherlands
+174.75.211.222,4145,socks5,United States of America
+144.91.111.48,1088,socks5,France
+117.50.194.130,7890,socks5,China
+123.147.190.222,7890,socks5,China
+103.236.190.197,1080,socks5,Indonesia
+47.82.70.164,1011,socks5,Hong Kong
+160.250.54.8,9000,socks5,Viet Nam
+47.83.14.133,1011,socks5,Hong Kong
+109.120.155.157,1080,socks5,Sweden
+95.217.23.103,8443,socks5,Finland
+118.69.134.153,20000,socks5,Viet Nam
+77.221.152.210,36219,socks5,France
+217.154.155.115,8080,socks5,Germany
+5.129.194.48,1080,socks5,Russian Federation
+89.150.35.253,1080,socks5,Netherlands
+184.178.172.11,4145,socks5,United States of America
+45.251.112.57,1080,socks5,Viet Nam
+195.128.18.229,1080,socks5,Ukraine
+64.188.81.66,10001,socks5,Sweden
+157.90.183.51,5555,socks5,Germany
+85.137.245.75,1080,socks5,Hong Kong
+108.165.236.206,1080,socks5,Germany
+213.155.11.237,1080,socks5,Finland
+213.188.215.27,1080,socks5,United States of America
+89.163.206.215,9050,socks5,Germany
+194.233.79.120,1080,socks5,Singapore
+64.188.64.135,1080,socks5,Germany
+104.131.170.36,40001,socks5,United States of America
+185.108.76.197,9050,socks5,Germany
+176.35.25.216,1080,socks5,United Kingdom of Great Britain and Northern Ireland
+83.217.9.235,2080,socks5,Türkiye
+213.148.6.12,7777,socks5,Kazakhstan
+92.205.186.129,1080,socks5,France
+43.167.197.229,40001,socks5,Japan
+91.107.251.227,8090,socks5,Germany
+45.40.136.39,45741,socks5,United States of America
+92.42.37.152,587,socks5,Türkiye
+27.123.245.70,1080,socks5,Germany
 47.245.104.45,1011,socks5,Singapore
-5.10.213.115,3080,socks5,Finland
-116.97.240.124,1543,socks5,Viet Nam
-95.31.16.116,1081,socks5,Russian Federation
+45.61.188.134,44499,socks5,United States of America
+184.178.172.3,4145,socks5,United States of America
+57.129.123.224,30629,socks5,Germany
+72.255.38.180,1080,socks5,Pakistan
+185.225.40.122,1080,socks5,Syrian Arab Republic
+146.235.231.249,1080,socks5,United States of America
+109.71.244.97,1080,socks5,Netherlands
+176.123.162.147,1080,socks5,Russian Federation
+47.86.42.224,1011,socks5,Hong Kong
+47.76.153.11,1011,socks5,Hong Kong
+199.58.185.9,4145,socks5,United States of America
+158.69.213.1,9050,socks5,Canada
+77.81.230.90,9050,socks5,Italy
+77.110.103.146,1080,socks5,Netherlands
+168.138.219.12,8081,socks5,Japan
+84.127.163.101,9150,socks5,Spain
+158.58.134.65,10080,socks5,Russian Federation
+213.165.34.255,1080,socks5,Sweden
+68.64.179.72,10809,socks5,Hong Kong
+91.149.233.129,9050,socks5,Germany
+36.33.1.106,54489,socks5,China
+72.56.125.127,18080,socks5,Netherlands
+118.70.151.55,1080,socks5,Viet Nam
+47.238.197.190,1011,socks5,Hong Kong
+207.244.69.164,50005,socks5,United States of America
+110.76.144.112,1080,socks5,Indonesia
+169.155.50.87,1080,socks5,United States of America
+89.110.70.140,1080,socks5,Netherlands
+185.215.160.123,1080,socks5,Kazakhstan
+178.218.119.29,10808,socks5,Russian Federation
+192.111.130.5,17002,socks5,United States of America
+111.48.191.24,7890,socks5,China
+5.249.165.195,20000,socks5,United States of America
+98.175.31.195,4145,socks5,United States of America
+178.104.242.12,9050,socks5,United Kingdom of Great Britain and Northern Ireland
+2.26.66.216,1080,socks5,Finland
+212.113.104.29,10801,socks5,Germany
+45.10.42.68,1080,socks5,Netherlands
+142.93.98.224,1080,socks5,Germany
+47.238.210.231,1011,socks5,Hong Kong
+79.111.14.142,1080,socks5,Russian Federation
+65.109.148.248,1080,socks5,Finland
+147.93.141.97,10808,socks5,United States of America
+188.93.140.146,1080,socks5,Sweden
+47.82.84.201,1011,socks5,Hong Kong
